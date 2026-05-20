@@ -1,0 +1,7 @@
+10:00,192.168.1.10,INFO,User login successful
+10:01,192.168.1.10,ERROR,Failed login attempt
+10:02,192.168.1.10,ERROR,Failed login attempt
+10:03,192.168.1.10,ERROR,Failed login attempt
+10:04,192.168.1.11,WARNING,Disk usage high
+10:05,192.168.1.12,INFO,System boot
+10:06,192.168.1.11,ERROR,Unauthorized access attempt
