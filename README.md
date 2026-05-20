@@ -47,7 +47,7 @@ log-analyzer-v2/
 
 ---
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Frans De La Rosa
 Cybersecurity / SOC Analyst Learning Project
