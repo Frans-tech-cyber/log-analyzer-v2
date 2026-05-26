@@ -1,56 +1,48 @@
-# Log Analyzer v2 (Python SOC Project)
+# Log Analyzer (Python SOC Tool)
 
 ## 🧠 Overview
-This project is a Python-based log analysis tool designed to simulate basic Security Operations Center (SOC) functionality.
+This project is a Python-based log analysis tool that simulates core Security Operations Center (SOC) functionality.
 
-It parses log files, classifies events, and detects suspicious activity such as repeated errors and potential brute-force patterns.
+It processes structured log files, detects suspicious patterns, and generates alerts for potential security incidents such as brute-force attacks and password spraying.
 
 ---
 
 ## 🚨 Features
 
-- Parses structured log files
-- Classifies events (INFO, WARNING, ERROR)
-- Tracks error frequency per IP address
-- Detects time-based attack patterns
-- Identifies suspicious log messages
-- Generates a structured analysis report
+- Log parsing and classification (INFO, WARNING, ERROR)
+- Error aggregation per IP address
+- Time-based detection of error spikes
+- Detection of suspicious log messages
+- Password spraying detection (multiple IPs targeting same user)
+- Structured security reporting
 
 ---
 
-## ⚙️ How It Works
+## ⚙️ Detection Capabilities
 
-1. Reads log file (`sample_logs.txt`)
-2. Extracts:
-   - Timestamp
-   - IP address
-   - Log level
-   - Message
-3. Aggregates:
-   - Event counts
-   - Errors per IP
-   - Error message frequency
-4. Detects:
-   - Error spikes within a time window
-   - Suspicious messages (e.g. failed login, unauthorized access)
-5. Outputs a structured report
+### 1. Error Spike Detection
+Identifies multiple error events from a single IP within a defined time window.
+
+### 2. Suspicious Message Detection
+Flags log entries containing indicators such as:
+- Failed login attempts
+- Unauthorized access
+
+### 3. Password Spraying Detection
+Detects when multiple IP addresses attempt to access the same user account.
 
 ---
 
 ## 📂 Project Structure
-
-log-analyzer-v2/
+log-analyzer/
 │
-├── log_analyzer.py # Main analysis script
-├── sample_logs.txt # Example log file
-└── README.md # Documentation
-
----
+├── log_analyzer.py
+├── sample_logs.txt
+└── README.md
 
 ## 👨‍💻 Author
-
-Frans De La Rosa
-Cybersecurity / SOC Analyst Learning Project
+Francisco De La Rosa
+Aspiring SOC Analyst | Cybersecurity Projects
 
 ---
 
