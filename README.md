@@ -1,52 +1,102 @@
-# Log Analyzer (Python SOC Tool)
+# Log Analyzer (Python SOC Detection Tool)
 
 ## 🧠 Overview
-This project is a Python-based log analysis tool that simulates core Security Operations Center (SOC) functionality.
 
-It processes structured log files, detects suspicious patterns, and generates alerts for potential security incidents such as brute-force attacks and password spraying.
+This project is a Python-based SOC (Security Operations Center) log analysis tool designed to detect suspicious authentication and system activity from structured log files.
 
----
-
-## 🚨 Features
-
-- Log parsing and classification (INFO, WARNING, ERROR)
-- Error aggregation per IP address
-- Time-based detection of error spikes
-- Detection of suspicious log messages
-- Password spraying detection (multiple IPs targeting same user)
-- Structured security reporting
+The tool simulates core SOC detection workflows by analyzing logs, correlating events, and generating alerts for potential security threats.
 
 ---
 
-## ⚙️ Detection Capabilities
+# 🚨 Detection Features
 
-### 1. Error Spike Detection
-Identifies multiple error events from a single IP within a defined time window.
+## 1. Error Spike Detection
+Detects multiple error events from the same IP address within a defined time window.
 
-### 2. Suspicious Message Detection
-Flags log entries containing indicators such as:
+Example:
+- Multiple ERROR events from one IP within 5 minutes
+
+---
+
+## 2. Suspicious Message Detection
+Flags high-risk log entries such as:
 - Failed login attempts
-- Unauthorized access
-
-### 3. Password Spraying Detection
-Detects when multiple IP addresses attempt to access the same user account.
+- Unauthorized access attempts
 
 ---
 
-## 📂 Project Structure
+## 3. Password Spraying Detection
+Detects multiple IP addresses attempting to access the same user account.
+
+Example:
+- Multiple IPs targeting the `admin` account
+
+---
+
+## 4. Success-after-Failure Detection
+Detects successful logins occurring shortly after multiple failed login attempts from the same IP address.
+
+This may indicate:
+- Credential compromise
+- Successful brute-force attack
+- Unauthorized account access
+
+---
+
+# 📂 Project Structure
+
+```text
 log-analyzer/
 │
 ├── log_analyzer.py
 ├── sample_logs.txt
 └── README.md
-
-## 👨‍💻 Author
-Francisco De La Rosa
-Aspiring SOC Analyst | Cybersecurity Projects
+```
 
 ---
 
-## ▶️ How to Run
+# ▶️ How to Run
 
 ```bash
 python log_analyzer.py
+```
+
+---
+
+# 🛠️ Technologies Used
+
+- Python 3
+- datetime module
+- Dictionaries
+- Sets
+- Time-based event correlation
+
+---
+
+# 🛡️ Skills Demonstrated
+
+- Log parsing and analysis
+- SOC alerting concepts
+- Threat detection engineering
+- Behavioral analysis
+- Python automation
+- Event correlation logic
+
+---
+
+# 🚀 Future Improvements
+
+- Real-time log monitoring
+- CLI argument support
+- JSON log support
+- Severity scoring
+- SIEM integration
+- Port scan detection
+
+---
+
+# 👨‍💻 Author
+
+Frans De La Rosa
+
+Aspiring SOC Analyst focused on threat detection, log analysis, and security automation.
