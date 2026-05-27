@@ -5,3 +5,22 @@
 10:04,192.168.1.11,WARNING,Disk usage high
 10:05,192.168.1.12,INFO,System boot
 10:06,192.168.1.13,ERROR,Unauthorized access attempt
+
+10:07,192.168.1.14,ERROR,Failed login: root
+10:08,192.168.1.14,ERROR,Failed login: root
+10:09,192.168.1.14,ERROR,Failed login: root
+10:10,192.168.1.14,INFO,User login successful
+
+10:11,192.168.1.15,ERROR,Failed login: admin
+10:12,192.168.1.15,ERROR,Failed login: admin
+10:13,192.168.1.15,ERROR,Failed login: admin
+10:14,192.168.1.15,ERROR,Failed login: admin
+10:15,192.168.1.15,INFO,User login successful
+
+10:16,192.168.1.16,WARNING,CPU usage high
+10:17,192.168.1.16,ERROR,Failed login: test
+10:18,192.168.1.17,INFO,System update completed
+10:19,192.168.1.17,ERROR,Failed login: admin
+10:20,192.168.1.17,ERROR,Failed login: admin
+10:21,192.168.1.17,ERROR,Failed login: admin
+10:22,192.168.1.17,INFO,User login successful
